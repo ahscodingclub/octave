@@ -1,0 +1,24 @@
+octave:2> t = [0:0.01:0.98];
+octave:3> y1 = sin(2*pi*4*t);
+octave:4> plot(t,y1)
+octave:5> hold on;
+octave:6> y2 = cos(2*pi*4*t);
+octave:7> plot(t,y2,'r');
+octave:8> xlabel('time')
+octave:9> ylabel('value')
+octave:10> legend('sin', 'cos')
+octave:11> title('my plot')
+octave:12> pwd
+ans = /home/t420/Documents/git/octave
+octave:13> print -dpng figures/'my_plot.png'
+warning: print.m: epstool binary is not available.
+Some output formats are not available.
+warning: called from
+    __print_parse_opts__ at line 382 column 9
+    print at line 288 column 8
+error: print: printing not available without gl2ps library
+error: called from
+    __opengl_print__ at line 168 column 7
+    print at line 431 column 14
+octave:13> exit
+
